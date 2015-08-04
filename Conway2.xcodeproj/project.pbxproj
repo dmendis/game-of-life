@@ -14,6 +14,9 @@
 		A30E32311B6EEB9F00A1A3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30E322F1B6EEB9F00A1A3E0 /* LaunchScreen.storyboard */; };
 		A30E323C1B6EEB9F00A1A3E0 /* Conway2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E323B1B6EEB9F00A1A3E0 /* Conway2Tests.swift */; };
 		A30E32471B6EEB9F00A1A3E0 /* Conway2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E32461B6EEB9F00A1A3E0 /* Conway2UITests.swift */; };
+		A30E32561B6EECF500A1A3E0 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E32551B6EECF500A1A3E0 /* Board.swift */; };
+		A30E32571B6EECF500A1A3E0 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E32551B6EECF500A1A3E0 /* Board.swift */; };
+		B01C82831B7028CE00F395CB /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C82821B7028CE00F395CB /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		A30E32421B6EEB9F00A1A3E0 /* Conway2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Conway2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30E32461B6EEB9F00A1A3E0 /* Conway2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conway2UITests.swift; sourceTree = "<group>"; };
 		A30E32481B6EEB9F00A1A3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30E32551B6EECF500A1A3E0 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		B01C82821B7028CE00F395CB /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +102,8 @@
 		A30E32251B6EEB9F00A1A3E0 /* Conway2 */ = {
 			isa = PBXGroup;
 			children = (
-				A30E32261B6EEB9F00A1A3E0 /* AppDelegate.swift */,
-				A30E32281B6EEB9F00A1A3E0 /* ViewController.swift */,
-				A30E322A1B6EEB9F00A1A3E0 /* Main.storyboard */,
-				A30E322D1B6EEB9F00A1A3E0 /* Assets.xcassets */,
-				A30E322F1B6EEB9F00A1A3E0 /* LaunchScreen.storyboard */,
-				A30E32321B6EEB9F00A1A3E0 /* Info.plist */,
+				A30E32551B6EECF500A1A3E0 /* Board.swift */,
+				A30E32541B6EEBAA00A1A3E0 /* blah */,
 			);
 			path = Conway2;
 			sourceTree = "<group>";
@@ -123,6 +124,20 @@
 				A30E32481B6EEB9F00A1A3E0 /* Info.plist */,
 			);
 			path = Conway2UITests;
+			sourceTree = "<group>";
+		};
+		A30E32541B6EEBAA00A1A3E0 /* blah */ = {
+			isa = PBXGroup;
+			children = (
+				A30E32281B6EEB9F00A1A3E0 /* ViewController.swift */,
+				A30E322A1B6EEB9F00A1A3E0 /* Main.storyboard */,
+				A30E32261B6EEB9F00A1A3E0 /* AppDelegate.swift */,
+				A30E322D1B6EEB9F00A1A3E0 /* Assets.xcassets */,
+				A30E322F1B6EEB9F00A1A3E0 /* LaunchScreen.storyboard */,
+				A30E32321B6EEB9F00A1A3E0 /* Info.plist */,
+				B01C82821B7028CE00F395CB /* BoardView.swift */,
+			);
+			name = blah;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30E32291B6EEB9F00A1A3E0 /* ViewController.swift in Sources */,
+				B01C82831B7028CE00F395CB /* BoardView.swift in Sources */,
+				A30E32561B6EECF500A1A3E0 /* Board.swift in Sources */,
 				A30E32271B6EEB9F00A1A3E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30E323C1B6EEB9F00A1A3E0 /* Conway2Tests.swift in Sources */,
+				A30E32571B6EECF500A1A3E0 /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +501,7 @@
 				A30E324D1B6EEB9F00A1A3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30E324E1B6EEB9F00A1A3E0 /* Build configuration list for PBXNativeTarget "Conway2Tests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +510,7 @@
 				A30E32501B6EEB9F00A1A3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A30E32511B6EEB9F00A1A3E0 /* Build configuration list for PBXNativeTarget "Conway2UITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +519,7 @@
 				A30E32531B6EEB9F00A1A3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

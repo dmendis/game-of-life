@@ -11,9 +11,11 @@ import XCTest
 
 class Conway2Tests: XCTestCase {
     
+    let board = Board()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
     
     override func tearDown() {
@@ -21,16 +23,18 @@ class Conway2Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func test_age() {
+        board.setCell(1, y: 0)
+        board.setCell(1, y: 1)
+        board.setCell(1, y: 2)
+        
+        board.age()
+        
+        let state = board.getBoardState(3, width: 3)
+        for i in 0..<state.count {
+            XCTAssertTrue(state[i] == (i==1 || i==4 || i==7))
         }
     }
+    
     
 }
